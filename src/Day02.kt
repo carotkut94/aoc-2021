@@ -20,7 +20,7 @@ fun main(){
 
     // Part 2, with aim inclusion
 
-    val (horizontal1, depth1, aim1) = moves.fold(
+    val (horizontal1, depth1) = moves.fold(
         initial = Triple(0,0,0),
         operation = {(h,d,a),(x,y)->Triple(h+x,d+a*x, a+y)}
     )
